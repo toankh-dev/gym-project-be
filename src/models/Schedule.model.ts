@@ -179,7 +179,7 @@ export class TrainingSchedule extends Model<TrainingScheduleAttributes, Training
           ]
         }
       ],
-      order: [['startDate', 'ASC'], ['startTime', 'ASC']]
+      order: [['startDate', 'DESC'], ['startTime', 'DESC']]
     });
   }
 
