@@ -1,0 +1,374 @@
+2026-08-14 21:35:56 [ERROR]: Unable to connect to the database:
+SequelizeConnectionRefusedError
+    at ConnectionManager.connect (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\mysql\connection-manager.js:116:17)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async ConnectionManager._connect (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:332:24)
+    at async D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:250:32
+    at async ConnectionManager.getConnection (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:280:7)
+    at async D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\sequelize.js:638:26
+    at async Sequelize.authenticate (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\sequelize.js:972:5)
+    at async connectDatabase (D:\Projects\gym-project\gym-project\gym-project-be\src\config\database.config.ts:93:5)
+    at async startServer (D:\Projects\gym-project\gym-project\gym-project-be\src\index.ts:153:5)
+{
+  "name": "SequelizeConnectionRefusedError",
+  "parent": {
+    "code": "ECONNREFUSED",
+    "fatal": true
+  },
+  "original": {
+    "code": "ECONNREFUSED",
+    "fatal": true
+  }
+}
+2026-08-14 21:38:48 [ERROR]: Unable to connect to the database:
+SequelizeConnectionRefusedError
+    at ConnectionManager.connect (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\mysql\connection-manager.js:116:17)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async ConnectionManager._connect (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:332:24)
+    at async D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:250:32
+    at async ConnectionManager.getConnection (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:280:7)
+    at async D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\sequelize.js:638:26
+    at async Sequelize.authenticate (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\sequelize.js:972:5)
+    at async connectDatabase (D:\Projects\gym-project\gym-project\gym-project-be\src\config\database.config.ts:93:5)
+    at async startServer (D:\Projects\gym-project\gym-project\gym-project-be\src\index.ts:153:5)
+{
+  "name": "SequelizeConnectionRefusedError",
+  "parent": {
+    "code": "ECONNREFUSED",
+    "fatal": true
+  },
+  "original": {
+    "code": "ECONNREFUSED",
+    "fatal": true
+  }
+}
+2026-08-14 22:02:03 [ERROR]: Unable to connect to the database:
+SequelizeConnectionRefusedError
+    at ConnectionManager.connect (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\mysql\connection-manager.js:116:17)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async ConnectionManager._connect (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:332:24)
+    at async D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:250:32
+    at async ConnectionManager.getConnection (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:280:7)
+    at async D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\sequelize.js:638:26
+    at async Sequelize.authenticate (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\sequelize.js:972:5)
+    at async connectDatabase (D:\Projects\gym-project\gym-project\gym-project-be\src\config\database.config.ts:93:5)
+    at async startServer (D:\Projects\gym-project\gym-project\gym-project-be\src\index.ts:153:5)
+{
+  "name": "SequelizeConnectionRefusedError",
+  "parent": {
+    "code": "ECONNREFUSED",
+    "fatal": true
+  },
+  "original": {
+    "code": "ECONNREFUSED",
+    "fatal": true
+  }
+}
+2026-08-14 22:14:24 [ERROR]: Unable to connect to the database:
+SequelizeConnectionRefusedError
+    at ConnectionManager.connect (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\mysql\connection-manager.js:116:17)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async ConnectionManager._connect (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:332:24)
+    at async D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:250:32
+    at async ConnectionManager.getConnection (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:280:7)
+    at async D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\sequelize.js:638:26
+    at async Sequelize.authenticate (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\sequelize.js:972:5)
+    at async connectDatabase (D:\Projects\gym-project\gym-project\gym-project-be\src\config\database.config.ts:93:5)
+    at async startServer (D:\Projects\gym-project\gym-project\gym-project-be\src\index.ts:153:5)
+{
+  "name": "SequelizeConnectionRefusedError",
+  "parent": {
+    "code": "ECONNREFUSED",
+    "fatal": true
+  },
+  "original": {
+    "code": "ECONNREFUSED",
+    "fatal": true
+  }
+}
+2026-08-14 22:14:59 [ERROR]: Unable to connect to the database:
+SequelizeConnectionRefusedError
+    at ConnectionManager.connect (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\mysql\connection-manager.js:116:17)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async ConnectionManager._connect (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:332:24)
+    at async D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:250:32
+    at async ConnectionManager.getConnection (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:280:7)
+    at async D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\sequelize.js:638:26
+    at async Sequelize.authenticate (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\sequelize.js:972:5)
+    at async connectDatabase (D:\Projects\gym-project\gym-project\gym-project-be\src\config\database.config.ts:93:5)
+    at async startServer (D:\Projects\gym-project\gym-project\gym-project-be\src\index.ts:153:5)
+{
+  "name": "SequelizeConnectionRefusedError",
+  "parent": {
+    "code": "ECONNREFUSED",
+    "fatal": true
+  },
+  "original": {
+    "code": "ECONNREFUSED",
+    "fatal": true
+  }
+}
+2026-08-14 22:15:14 [ERROR]: Unable to connect to the database:
+SequelizeConnectionRefusedError
+    at ConnectionManager.connect (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\mysql\connection-manager.js:116:17)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async ConnectionManager._connect (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:332:24)
+    at async D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:250:32
+    at async ConnectionManager.getConnection (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:280:7)
+    at async D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\sequelize.js:638:26
+    at async Sequelize.authenticate (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\sequelize.js:972:5)
+    at async connectDatabase (D:\Projects\gym-project\gym-project\gym-project-be\src\config\database.config.ts:93:5)
+    at async startServer (D:\Projects\gym-project\gym-project\gym-project-be\src\index.ts:153:5)
+{
+  "name": "SequelizeConnectionRefusedError",
+  "parent": {
+    "code": "ECONNREFUSED",
+    "fatal": true
+  },
+  "original": {
+    "code": "ECONNREFUSED",
+    "fatal": true
+  }
+}
+2026-08-14 22:15:33 [ERROR]: Unable to connect to the database:
+SequelizeConnectionRefusedError
+    at ConnectionManager.connect (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\mysql\connection-manager.js:116:17)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async ConnectionManager._connect (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:332:24)
+    at async D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:250:32
+    at async ConnectionManager.getConnection (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:280:7)
+    at async D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\sequelize.js:638:26
+    at async Sequelize.authenticate (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\sequelize.js:972:5)
+    at async connectDatabase (D:\Projects\gym-project\gym-project\gym-project-be\src\config\database.config.ts:93:5)
+    at async startServer (D:\Projects\gym-project\gym-project\gym-project-be\src\index.ts:153:5)
+{
+  "name": "SequelizeConnectionRefusedError",
+  "parent": {
+    "code": "ECONNREFUSED",
+    "fatal": true
+  },
+  "original": {
+    "code": "ECONNREFUSED",
+    "fatal": true
+  }
+}
+2026-08-14 22:15:57 [ERROR]: Unable to connect to the database:
+SequelizeConnectionRefusedError
+    at ConnectionManager.connect (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\mysql\connection-manager.js:116:17)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async ConnectionManager._connect (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:332:24)
+    at async D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:250:32
+    at async ConnectionManager.getConnection (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:280:7)
+    at async D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\sequelize.js:638:26
+    at async Sequelize.authenticate (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\sequelize.js:972:5)
+    at async connectDatabase (D:\Projects\gym-project\gym-project\gym-project-be\src\config\database.config.ts:93:5)
+    at async startServer (D:\Projects\gym-project\gym-project\gym-project-be\src\index.ts:153:5)
+{
+  "name": "SequelizeConnectionRefusedError",
+  "parent": {
+    "code": "ECONNREFUSED",
+    "fatal": true
+  },
+  "original": {
+    "code": "ECONNREFUSED",
+    "fatal": true
+  }
+}
+2026-08-14 22:16:06 [ERROR]: Unable to connect to the database:
+SequelizeConnectionRefusedError
+    at ConnectionManager.connect (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\mysql\connection-manager.js:116:17)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async ConnectionManager._connect (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:332:24)
+    at async D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:250:32
+    at async ConnectionManager.getConnection (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:280:7)
+    at async D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\sequelize.js:638:26
+    at async Sequelize.authenticate (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\sequelize.js:972:5)
+    at async connectDatabase (D:\Projects\gym-project\gym-project\gym-project-be\src\config\database.config.ts:93:5)
+    at async startServer (D:\Projects\gym-project\gym-project\gym-project-be\src\index.ts:153:5)
+{
+  "name": "SequelizeConnectionRefusedError",
+  "parent": {
+    "code": "ECONNREFUSED",
+    "fatal": true
+  },
+  "original": {
+    "code": "ECONNREFUSED",
+    "fatal": true
+  }
+}
+2026-08-14 22:16:15 [ERROR]: Unable to connect to the database:
+SequelizeConnectionRefusedError
+    at ConnectionManager.connect (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\mysql\connection-manager.js:116:17)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async ConnectionManager._connect (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:332:24)
+    at async D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:250:32
+    at async ConnectionManager.getConnection (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:280:7)
+    at async D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\sequelize.js:638:26
+    at async Sequelize.authenticate (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\sequelize.js:972:5)
+    at async connectDatabase (D:\Projects\gym-project\gym-project\gym-project-be\src\config\database.config.ts:93:5)
+    at async startServer (D:\Projects\gym-project\gym-project\gym-project-be\src\index.ts:153:5)
+{
+  "name": "SequelizeConnectionRefusedError",
+  "parent": {
+    "code": "ECONNREFUSED",
+    "fatal": true
+  },
+  "original": {
+    "code": "ECONNREFUSED",
+    "fatal": true
+  }
+}
+2026-08-14 22:16:36 [ERROR]: Unable to connect to the database:
+SequelizeConnectionRefusedError
+    at ConnectionManager.connect (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\mysql\connection-manager.js:116:17)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async ConnectionManager._connect (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:332:24)
+    at async D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:250:32
+    at async ConnectionManager.getConnection (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:280:7)
+    at async D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\sequelize.js:638:26
+    at async Sequelize.authenticate (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\sequelize.js:972:5)
+    at async connectDatabase (D:\Projects\gym-project\gym-project\gym-project-be\src\config\database.config.ts:93:5)
+    at async startServer (D:\Projects\gym-project\gym-project\gym-project-be\src\index.ts:153:5)
+{
+  "name": "SequelizeConnectionRefusedError",
+  "parent": {
+    "code": "ECONNREFUSED",
+    "fatal": true
+  },
+  "original": {
+    "code": "ECONNREFUSED",
+    "fatal": true
+  }
+}
+2026-08-14 22:16:49 [ERROR]: Unable to connect to the database:
+SequelizeConnectionRefusedError
+    at ConnectionManager.connect (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\mysql\connection-manager.js:116:17)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async ConnectionManager._connect (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:332:24)
+    at async D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:250:32
+    at async ConnectionManager.getConnection (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:280:7)
+    at async D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\sequelize.js:638:26
+    at async Sequelize.authenticate (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\sequelize.js:972:5)
+    at async connectDatabase (D:\Projects\gym-project\gym-project\gym-project-be\src\config\database.config.ts:93:5)
+    at async startServer (D:\Projects\gym-project\gym-project\gym-project-be\src\index.ts:153:5)
+{
+  "name": "SequelizeConnectionRefusedError",
+  "parent": {
+    "code": "ECONNREFUSED",
+    "fatal": true
+  },
+  "original": {
+    "code": "ECONNREFUSED",
+    "fatal": true
+  }
+}
+2026-08-14 22:17:52 [ERROR]: Unable to connect to the database:
+SequelizeConnectionRefusedError
+    at ConnectionManager.connect (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\mysql\connection-manager.js:116:17)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async ConnectionManager._connect (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:332:24)
+    at async D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:250:32
+    at async ConnectionManager.getConnection (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:280:7)
+    at async D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\sequelize.js:638:26
+    at async Sequelize.authenticate (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\sequelize.js:972:5)
+    at async connectDatabase (D:\Projects\gym-project\gym-project\gym-project-be\src\config\database.config.ts:93:5)
+    at async startServer (D:\Projects\gym-project\gym-project\gym-project-be\src\index.ts:153:5)
+{
+  "name": "SequelizeConnectionRefusedError",
+  "parent": {
+    "code": "ECONNREFUSED",
+    "fatal": true
+  },
+  "original": {
+    "code": "ECONNREFUSED",
+    "fatal": true
+  }
+}
+2026-08-14 22:18:04 [ERROR]: Unable to connect to the database:
+SequelizeConnectionRefusedError
+    at ConnectionManager.connect (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\mysql\connection-manager.js:116:17)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async ConnectionManager._connect (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:332:24)
+    at async D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:250:32
+    at async ConnectionManager.getConnection (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:280:7)
+    at async D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\sequelize.js:638:26
+    at async Sequelize.authenticate (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\sequelize.js:972:5)
+    at async connectDatabase (D:\Projects\gym-project\gym-project\gym-project-be\src\config\database.config.ts:93:5)
+    at async startServer (D:\Projects\gym-project\gym-project\gym-project-be\src\index.ts:153:5)
+{
+  "name": "SequelizeConnectionRefusedError",
+  "parent": {
+    "code": "ECONNREFUSED",
+    "fatal": true
+  },
+  "original": {
+    "code": "ECONNREFUSED",
+    "fatal": true
+  }
+}
+2026-08-14 23:33:46 [ERROR]: Unable to connect to the database:
+SequelizeConnectionRefusedError
+    at ConnectionManager.connect (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\mysql\connection-manager.js:116:17)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async ConnectionManager._connect (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:332:24)
+    at async D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:250:32
+    at async ConnectionManager.getConnection (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:280:7)
+    at async D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\sequelize.js:638:26
+    at async Sequelize.authenticate (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\sequelize.js:972:5)
+    at async connectDatabase (D:\Projects\gym-project\gym-project\gym-project-be\src\config\database.config.ts:93:5)
+    at async startServer (D:\Projects\gym-project\gym-project\gym-project-be\src\index.ts:153:5)
+{
+  "name": "SequelizeConnectionRefusedError",
+  "parent": {
+    "code": "ECONNREFUSED",
+    "fatal": true
+  },
+  "original": {
+    "code": "ECONNREFUSED",
+    "fatal": true
+  }
+}
+2026-08-14 23:33:53 [ERROR]: Unable to connect to the database:
+SequelizeConnectionRefusedError
+    at ConnectionManager.connect (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\mysql\connection-manager.js:116:17)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async ConnectionManager._connect (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:332:24)
+    at async D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:250:32
+    at async ConnectionManager.getConnection (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:280:7)
+    at async D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\sequelize.js:638:26
+    at async Sequelize.authenticate (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\sequelize.js:972:5)
+    at async connectDatabase (D:\Projects\gym-project\gym-project\gym-project-be\src\config\database.config.ts:93:5)
+    at async startServer (D:\Projects\gym-project\gym-project\gym-project-be\src\index.ts:153:5)
+{
+  "name": "SequelizeConnectionRefusedError",
+  "parent": {
+    "code": "ECONNREFUSED",
+    "fatal": true
+  },
+  "original": {
+    "code": "ECONNREFUSED",
+    "fatal": true
+  }
+}
+2026-08-14 23:34:27 [ERROR]: Unable to connect to the database:
+SequelizeConnectionRefusedError
+    at ConnectionManager.connect (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\mysql\connection-manager.js:116:17)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async ConnectionManager._connect (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:332:24)
+    at async D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:250:32
+    at async ConnectionManager.getConnection (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\dialects\abstract\connection-manager.js:280:7)
+    at async D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\sequelize.js:638:26
+    at async Sequelize.authenticate (D:\Projects\gym-project\gym-project\gym-project-be\node_modules\sequelize\src\sequelize.js:972:5)
+    at async connectDatabase (D:\Projects\gym-project\gym-project\gym-project-be\src\config\database.config.ts:93:5)
+    at async startServer (D:\Projects\gym-project\gym-project\gym-project-be\src\index.ts:153:5)
+{
+  "name": "SequelizeConnectionRefusedError",
+  "parent": {
+    "code": "ECONNREFUSED",
+    "fatal": true
+  },
+  "original": {
+    "code": "ECONNREFUSED",
+    "fatal": true
+  }
+}

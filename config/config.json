@@ -1,0 +1,43 @@
+{
+  "development": {
+    "username": "gym_user",
+    "password": "secure_password123",
+    "database": "gym_management_system",
+    "host": "mysql",
+    "port": 3306,
+    "dialect": "mysql",
+    "timezone": "+07:00",
+    "logging": false,
+    "migrations-path": "./src/database/migrations",
+    "seeders-path": "./src/database/seeders",
+    "dialectOptions": {
+      "charset": "utf8mb4",
+      "collate": "utf8mb4_unicode_ci"
+    },
+    "define": {
+      "charset": "utf8mb4",
+      "collate": "utf8mb4_unicode_ci",
+      "underscored": true,
+      "freezeTableName": true,
+      "timestamps": true,
+      "paranoid": true
+    }
+  },
+  "test": {
+    "username": "root",
+    "password": "root123",
+    "database": "gym_management_test",
+    "host": "127.0.0.1",
+    "port": 3306,
+    "dialect": "mysql"
+  },
+  "production": {
+    "use_env_variable": "DATABASE_URL",
+    "dialect": "mysql",
+    "dialectOptions": {
+      "ssl": {
+        "rejectUnauthorized": false
+      }
+    }
+  }
+}

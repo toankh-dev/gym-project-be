@@ -1,0 +1,37 @@
+import { Request, Response } from 'express';
+export declare const getTrainers: (req: Request, res: Response, next: import("express").NextFunction) => void;
+export declare const getActiveTrainers: (req: Request, res: Response, next: import("express").NextFunction) => void;
+export declare const getTrainerById: (req: Request, res: Response, next: import("express").NextFunction) => void;
+export declare const getTrainerByCode: (req: Request, res: Response, next: import("express").NextFunction) => void;
+export declare const createTrainer: (req: Request, res: Response, next: import("express").NextFunction) => void;
+export declare const updateTrainer: (req: Request, res: Response, next: import("express").NextFunction) => void;
+export declare const deleteTrainer: (req: Request, res: Response, next: import("express").NextFunction) => void;
+export declare const getTrainerStatistics: (req: Request, res: Response, next: import("express").NextFunction) => void;
+export declare const getTrainerMembers: (req: Request, res: Response, next: import("express").NextFunction) => void;
+export declare const getCurrentTrainer: (req: Request, res: Response, next: import("express").NextFunction) => void;
+export declare const getSpecializations: (req: Request, res: Response, next: import("express").NextFunction) => void;
+export declare const createSpecialization: (req: Request, res: Response, next: import("express").NextFunction) => void;
+export declare const updateSpecialization: (req: Request, res: Response, next: import("express").NextFunction) => void;
+export declare const getMyMembers: (req: Request, res: Response, next: import("express").NextFunction) => void;
+export declare const getMyMemberSessions: (req: Request, res: Response, next: import("express").NextFunction) => void;
+export declare const getMyDashboard: (req: Request, res: Response, next: import("express").NextFunction) => void;
+declare const _default: {
+    getTrainers: (req: Request, res: Response, next: import("express").NextFunction) => void;
+    getActiveTrainers: (req: Request, res: Response, next: import("express").NextFunction) => void;
+    getTrainerById: (req: Request, res: Response, next: import("express").NextFunction) => void;
+    getTrainerByCode: (req: Request, res: Response, next: import("express").NextFunction) => void;
+    createTrainer: (req: Request, res: Response, next: import("express").NextFunction) => void;
+    updateTrainer: (req: Request, res: Response, next: import("express").NextFunction) => void;
+    deleteTrainer: (req: Request, res: Response, next: import("express").NextFunction) => void;
+    getTrainerStatistics: (req: Request, res: Response, next: import("express").NextFunction) => void;
+    getTrainerMembers: (req: Request, res: Response, next: import("express").NextFunction) => void;
+    getCurrentTrainer: (req: Request, res: Response, next: import("express").NextFunction) => void;
+    getMyDashboard: (req: Request, res: Response, next: import("express").NextFunction) => void;
+    getMyMembers: (req: Request, res: Response, next: import("express").NextFunction) => void;
+    getMyMemberSessions: (req: Request, res: Response, next: import("express").NextFunction) => void;
+    getSpecializations: (req: Request, res: Response, next: import("express").NextFunction) => void;
+    createSpecialization: (req: Request, res: Response, next: import("express").NextFunction) => void;
+    updateSpecialization: (req: Request, res: Response, next: import("express").NextFunction) => void;
+};
+export default _default;
+//# sourceMappingURL=trainer.controller.d.ts.map

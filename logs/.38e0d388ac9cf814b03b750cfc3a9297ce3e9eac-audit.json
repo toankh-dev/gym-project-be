@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 30
+    },
+    "auditLog": "D:\\Projects\\gym-project\\gym-project\\gym-project-be\\logs\\.38e0d388ac9cf814b03b750cfc3a9297ce3e9eac-audit.json",
+    "files": [
+        {
+            "date": 1786718155413,
+            "name": "D:\\Projects\\gym-project\\gym-project\\gym-project-be\\logs\\combined-2026-08-14.log",
+            "hash": "3a9fd6dc564b98645c05053f2885160584e454c7967c1f14f2dc1ca7260ba938"
+        }
+    ],
+    "hashType": "sha256"
+}

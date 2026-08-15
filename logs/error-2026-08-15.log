@@ -1,0 +1,894 @@
+2026-08-15 02:11:59 [ERROR]: HTTP Error
+Error: Failed to create member: Cannot read properties of undefined (reading 'slice')
+    at Object.internal (/app/src/middlewares/error.middleware.ts:255:35)
+    at /app/src/controllers/member.controller.ts:263:23
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+{
+  "service": "http",
+  "method": "POST",
+  "url": "/api/members",
+  "statusCode": 500,
+  "error": "Failed to create member: Cannot read properties of undefined (reading 'slice')"
+}
+2026-08-15 02:12:15 [ERROR]: HTTP Error
+Error: Failed to create member: Cannot read properties of undefined (reading 'slice')
+    at Object.internal (/app/src/middlewares/error.middleware.ts:255:35)
+    at /app/src/controllers/member.controller.ts:263:23
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+{
+  "service": "http",
+  "method": "POST",
+  "url": "/api/members",
+  "statusCode": 500,
+  "error": "Failed to create member: Cannot read properties of undefined (reading 'slice')"
+}
+2026-08-15 02:26:32 [ERROR]: HTTP Error
+Error: Failed to create trainer: notNull Violation: User.createdAt cannot be null,
+notNull Violation: User.updatedAt cannot be null,
+Validation error: Validation len on phone failed
+    at Object.internal (/app/src/middlewares/error.middleware.ts:255:35)
+    at /app/src/controllers/trainer.controller.ts:287:23
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+{
+  "service": "http",
+  "method": "POST",
+  "url": "/api/trainers",
+  "statusCode": 500,
+  "error": "Failed to create trainer: notNull Violation: User.createdAt cannot be null,\nnotNull Violation: User.updatedAt cannot be null,\nValidation error: Validation len on phone failed"
+}
+2026-08-15 02:26:53 [ERROR]: HTTP Error
+Error: Failed to create trainer: notNull Violation: User.createdAt cannot be null,
+notNull Violation: User.updatedAt cannot be null
+    at Object.internal (/app/src/middlewares/error.middleware.ts:255:35)
+    at /app/src/controllers/trainer.controller.ts:287:23
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+{
+  "service": "http",
+  "method": "POST",
+  "url": "/api/trainers",
+  "statusCode": 500,
+  "error": "Failed to create trainer: notNull Violation: User.createdAt cannot be null,\nnotNull Violation: User.updatedAt cannot be null"
+}
+2026-08-15 02:31:42 [ERROR]: HTTP Error
+Error: Failed to create member: Validation error: Validation isBefore on dateOfBirth failed
+    at Object.internal (/app/src/middlewares/error.middleware.ts:255:35)
+    at /app/src/controllers/member.controller.ts:263:23
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+{
+  "service": "http",
+  "method": "POST",
+  "url": "/api/members",
+  "statusCode": 500,
+  "error": "Failed to create member: Validation error: Validation isBefore on dateOfBirth failed"
+}
+2026-08-15 02:35:53 [ERROR]: HTTP Error
+Error: Failed to create member: Validation error
+    at Object.internal (/app/src/middlewares/error.middleware.ts:255:35)
+    at /app/src/controllers/member.controller.ts:263:23
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+{
+  "service": "http",
+  "method": "POST",
+  "url": "/api/members",
+  "statusCode": 500,
+  "error": "Failed to create member: Validation error"
+}
+2026-08-15 02:36:35 [ERROR]: HTTP Error
+Error: Failed to create member: Validation error
+    at Object.internal (/app/src/middlewares/error.middleware.ts:255:35)
+    at /app/src/controllers/member.controller.ts:263:23
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+{
+  "service": "http",
+  "method": "POST",
+  "url": "/api/members",
+  "statusCode": 500,
+  "error": "Failed to create member: Validation error"
+}
+2026-08-15 02:38:49 [ERROR]: HTTP Error
+Error: Failed to create member: Validation error
+    at Object.internal (/app/src/middlewares/error.middleware.ts:255:35)
+    at /app/src/controllers/member.controller.ts:263:23
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+{
+  "service": "http",
+  "method": "POST",
+  "url": "/api/members",
+  "statusCode": 500,
+  "error": "Failed to create member: Validation error"
+}
+2026-08-15 02:50:32 [ERROR]: Unable to connect to the database: Unknown database 'gym_management_system'
+SequelizeConnectionError: Unknown database 'gym_management_system'
+    at ConnectionManager.connect (/app/node_modules/sequelize/src/dialects/mysql/connection-manager.js:126:17)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/app/node_modules/sequelize/src/dialects/abstract/connection-manager.js:332:24)
+    at async /app/node_modules/sequelize/src/dialects/abstract/connection-manager.js:250:32
+    at async ConnectionManager.getConnection (/app/node_modules/sequelize/src/dialects/abstract/connection-manager.js:280:7)
+    at async /app/node_modules/sequelize/src/sequelize.js:638:26
+    at async Sequelize.authenticate (/app/node_modules/sequelize/src/sequelize.js:972:5)
+    at async connectDatabase (/app/src/config/database.config.ts:93:5)
+    at async startServer (/app/src/index.ts:153:5)
+{
+  "name": "SequelizeConnectionError",
+  "parent": {
+    "code": "ER_BAD_DB_ERROR",
+    "errno": 1049,
+    "sqlState": "42000",
+    "sqlMessage": "Unknown database 'gym_management_system'"
+  },
+  "original": {
+    "code": "ER_BAD_DB_ERROR",
+    "errno": 1049,
+    "sqlState": "42000",
+    "sqlMessage": "Unknown database 'gym_management_system'"
+  }
+}
+2026-08-15 02:51:39 [ERROR]: Unable to connect to the database: connect ECONNREFUSED 172.18.0.4:3306
+SequelizeConnectionRefusedError: connect ECONNREFUSED 172.18.0.4:3306
+    at ConnectionManager.connect (/app/node_modules/sequelize/src/dialects/mysql/connection-manager.js:116:17)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/app/node_modules/sequelize/src/dialects/abstract/connection-manager.js:332:24)
+    at async /app/node_modules/sequelize/src/dialects/abstract/connection-manager.js:250:32
+    at async ConnectionManager.getConnection (/app/node_modules/sequelize/src/dialects/abstract/connection-manager.js:280:7)
+    at async /app/node_modules/sequelize/src/sequelize.js:638:26
+    at async Sequelize.authenticate (/app/node_modules/sequelize/src/sequelize.js:972:5)
+    at async connectDatabase (/app/src/config/database.config.ts:93:5)
+    at async startServer (/app/src/index.ts:153:5)
+{
+  "name": "SequelizeConnectionRefusedError",
+  "parent": {
+    "errno": -111,
+    "code": "ECONNREFUSED",
+    "syscall": "connect",
+    "address": "172.18.0.4",
+    "port": 3306,
+    "fatal": true
+  },
+  "original": {
+    "errno": -111,
+    "code": "ECONNREFUSED",
+    "syscall": "connect",
+    "address": "172.18.0.4",
+    "port": 3306,
+    "fatal": true
+  }
+}
+2026-08-15 03:02:38 [ERROR]: Database Error: Database operation failed
+Error
+    at Query.run (/app/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /app/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.rawSelect (/app/node_modules/sequelize/src/dialects/abstract/query-interface.js:1043:18)
+    at async Function.aggregate (/app/node_modules/sequelize/src/model.js:2067:19)
+    at async Function.sum (/app/node_modules/sequelize/src/model.js:2236:12)
+    at async Promise.all (index 0)
+    at async /app/src/controllers/dashboard.controller.ts:36:59
+{
+  "service": "database",
+  "error": "Unknown column 'MemberSubscription.createdAt' in 'where clause'",
+  "url": "/api/dashboard",
+  "method": "GET",
+  "ip": "::ffff:192.168.65.1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "userId": 1,
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2026-08-15 03:02:38 [ERROR]: Database Error: Database operation failed
+Error
+    at Query.run (/app/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /app/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.rawSelect (/app/node_modules/sequelize/src/dialects/abstract/query-interface.js:1043:18)
+    at async Function.aggregate (/app/node_modules/sequelize/src/model.js:2067:19)
+    at async Function.sum (/app/node_modules/sequelize/src/model.js:2236:12)
+    at async Promise.all (index 0)
+    at async /app/src/controllers/dashboard.controller.ts:36:59
+{
+  "service": "database",
+  "error": "Unknown column 'MemberSubscription.createdAt' in 'where clause'",
+  "url": "/api/dashboard",
+  "method": "GET",
+  "ip": "::ffff:192.168.65.1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "userId": 1,
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2026-08-15 03:02:42 [ERROR]: Database Error: Database operation failed
+Error
+    at Query.run (/app/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /app/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.rawSelect (/app/node_modules/sequelize/src/dialects/abstract/query-interface.js:1043:18)
+    at async Function.aggregate (/app/node_modules/sequelize/src/model.js:2067:19)
+    at async Function.sum (/app/node_modules/sequelize/src/model.js:2236:12)
+    at async Promise.all (index 0)
+    at async /app/src/controllers/dashboard.controller.ts:36:59
+{
+  "service": "database",
+  "error": "Unknown column 'MemberSubscription.createdAt' in 'where clause'",
+  "url": "/api/dashboard",
+  "method": "GET",
+  "ip": "::ffff:192.168.65.1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "userId": 1,
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2026-08-15 03:02:42 [ERROR]: Database Error: Database operation failed
+Error
+    at Query.run (/app/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /app/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.rawSelect (/app/node_modules/sequelize/src/dialects/abstract/query-interface.js:1043:18)
+    at async Function.aggregate (/app/node_modules/sequelize/src/model.js:2067:19)
+    at async Function.sum (/app/node_modules/sequelize/src/model.js:2236:12)
+    at async Promise.all (index 0)
+    at async /app/src/controllers/dashboard.controller.ts:36:59
+{
+  "service": "database",
+  "error": "Unknown column 'MemberSubscription.createdAt' in 'where clause'",
+  "url": "/api/dashboard",
+  "method": "GET",
+  "ip": "::ffff:192.168.65.1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "userId": 1,
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2026-08-15 03:02:52 [ERROR]: Database Error: Database operation failed
+Error
+    at Query.run (/app/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /app/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.rawSelect (/app/node_modules/sequelize/src/dialects/abstract/query-interface.js:1043:18)
+    at async Function.aggregate (/app/node_modules/sequelize/src/model.js:2067:19)
+    at async Function.sum (/app/node_modules/sequelize/src/model.js:2236:12)
+    at async Promise.all (index 0)
+    at async /app/src/controllers/dashboard.controller.ts:36:59
+{
+  "service": "database",
+  "error": "Unknown column 'MemberSubscription.createdAt' in 'where clause'",
+  "url": "/api/dashboard",
+  "method": "GET",
+  "ip": "::ffff:192.168.65.1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "userId": 1,
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2026-08-15 03:02:52 [ERROR]: Database Error: Database operation failed
+Error
+    at Query.run (/app/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /app/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.rawSelect (/app/node_modules/sequelize/src/dialects/abstract/query-interface.js:1043:18)
+    at async Function.aggregate (/app/node_modules/sequelize/src/model.js:2067:19)
+    at async Function.sum (/app/node_modules/sequelize/src/model.js:2236:12)
+    at async Promise.all (index 0)
+    at async /app/src/controllers/dashboard.controller.ts:36:59
+{
+  "service": "database",
+  "error": "Unknown column 'MemberSubscription.createdAt' in 'where clause'",
+  "url": "/api/dashboard",
+  "method": "GET",
+  "ip": "::ffff:192.168.65.1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "userId": 1,
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2026-08-15 03:04:18 [ERROR]: Database Error: Database operation failed
+Error
+    at Query.run (/app/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /app/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.rawSelect (/app/node_modules/sequelize/src/dialects/abstract/query-interface.js:1043:18)
+    at async Function.aggregate (/app/node_modules/sequelize/src/model.js:2067:19)
+    at async Function.sum (/app/node_modules/sequelize/src/model.js:2236:12)
+    at async Promise.all (index 0)
+    at async /app/src/controllers/dashboard.controller.ts:36:59
+{
+  "service": "database",
+  "error": "Unknown column 'MemberSubscription.createdAt' in 'where clause'",
+  "url": "/api/dashboard",
+  "method": "GET",
+  "ip": "::ffff:192.168.65.1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "userId": 1,
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2026-08-15 03:04:18 [ERROR]: Database Error: Database operation failed
+Error
+    at Query.run (/app/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /app/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.rawSelect (/app/node_modules/sequelize/src/dialects/abstract/query-interface.js:1043:18)
+    at async Function.aggregate (/app/node_modules/sequelize/src/model.js:2067:19)
+    at async Function.sum (/app/node_modules/sequelize/src/model.js:2236:12)
+    at async Promise.all (index 0)
+    at async /app/src/controllers/dashboard.controller.ts:36:59
+{
+  "service": "database",
+  "error": "Unknown column 'MemberSubscription.createdAt' in 'where clause'",
+  "url": "/api/dashboard",
+  "method": "GET",
+  "ip": "::ffff:192.168.65.1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "userId": 1,
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2026-08-15 03:04:24 [ERROR]: Database Error: Database operation failed
+Error
+    at Query.run (/app/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /app/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/app/node_modules/sequelize/src/dialects/abstract/query-interface.js:1001:12)
+    at async Function.findAll (/app/node_modules/sequelize/src/model.js:1824:21)
+    at async Promise.all (index 1)
+    at async Function.findAndCountAll (/app/node_modules/sequelize/src/model.js:2183:27)
+    at async /app/src/routes/user.routes.ts:60:34
+{
+  "service": "database",
+  "error": "Unknown column 'User.createdAt' in 'order clause'",
+  "url": "/api/users?page=1&limit=10&search=&status=&role=",
+  "method": "GET",
+  "ip": "::ffff:192.168.65.1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "userId": 1,
+  "body": {},
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "10",
+    "search": "",
+    "status": "",
+    "role": ""
+  }
+}
+2026-08-15 03:04:24 [ERROR]: Database Error: Database operation failed
+Error
+    at Query.run (/app/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /app/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/app/node_modules/sequelize/src/dialects/abstract/query-interface.js:1001:12)
+    at async Function.findAll (/app/node_modules/sequelize/src/model.js:1824:21)
+    at async Promise.all (index 1)
+    at async Function.findAndCountAll (/app/node_modules/sequelize/src/model.js:2183:27)
+    at async /app/src/routes/user.routes.ts:60:34
+{
+  "service": "database",
+  "error": "Unknown column 'User.createdAt' in 'order clause'",
+  "url": "/api/users?page=1&limit=10&search=&status=&role=",
+  "method": "GET",
+  "ip": "::ffff:192.168.65.1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "userId": 1,
+  "body": {},
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "10",
+    "search": "",
+    "status": "",
+    "role": ""
+  }
+}
+2026-08-15 03:11:56 [ERROR]: Database Error: Database operation failed
+Error
+    at Query.run (/app/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /app/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.rawSelect (/app/node_modules/sequelize/src/dialects/abstract/query-interface.js:1043:18)
+    at async Function.aggregate (/app/node_modules/sequelize/src/model.js:2067:19)
+    at async Function.sum (/app/node_modules/sequelize/src/model.js:2236:12)
+    at async Promise.all (index 0)
+    at async /app/src/controllers/dashboard.controller.ts:36:59
+{
+  "service": "database",
+  "error": "Unknown column 'MemberSubscription.createdAt' in 'where clause'",
+  "url": "/api/dashboard",
+  "method": "GET",
+  "ip": "::ffff:192.168.65.1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "userId": 1,
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2026-08-15 03:11:57 [ERROR]: Database Error: Database operation failed
+Error
+    at Query.run (/app/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /app/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.rawSelect (/app/node_modules/sequelize/src/dialects/abstract/query-interface.js:1043:18)
+    at async Function.aggregate (/app/node_modules/sequelize/src/model.js:2067:19)
+    at async Function.sum (/app/node_modules/sequelize/src/model.js:2236:12)
+    at async Promise.all (index 0)
+    at async /app/src/controllers/dashboard.controller.ts:36:59
+{
+  "service": "database",
+  "error": "Unknown column 'MemberSubscription.createdAt' in 'where clause'",
+  "url": "/api/dashboard",
+  "method": "GET",
+  "ip": "::ffff:192.168.65.1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "userId": 1,
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2026-08-15 03:16:22 [ERROR]: Database Error: Database operation failed
+Error
+    at Query.run (/app/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /app/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.rawSelect (/app/node_modules/sequelize/src/dialects/abstract/query-interface.js:1043:18)
+    at async Function.aggregate (/app/node_modules/sequelize/src/model.js:2067:19)
+    at async Function.sum (/app/node_modules/sequelize/src/model.js:2236:12)
+    at async Promise.all (index 0)
+    at async /app/src/controllers/dashboard.controller.ts:36:59
+{
+  "service": "database",
+  "error": "Unknown column 'MemberSubscription.createdAt' in 'where clause'",
+  "url": "/api/dashboard",
+  "method": "GET",
+  "ip": "::ffff:192.168.65.1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "userId": 1,
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2026-08-15 03:16:22 [ERROR]: Database Error: Database operation failed
+Error
+    at Query.run (/app/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /app/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.rawSelect (/app/node_modules/sequelize/src/dialects/abstract/query-interface.js:1043:18)
+    at async Function.aggregate (/app/node_modules/sequelize/src/model.js:2067:19)
+    at async Function.sum (/app/node_modules/sequelize/src/model.js:2236:12)
+    at async Promise.all (index 0)
+    at async /app/src/controllers/dashboard.controller.ts:36:59
+{
+  "service": "database",
+  "error": "Unknown column 'MemberSubscription.createdAt' in 'where clause'",
+  "url": "/api/dashboard",
+  "method": "GET",
+  "ip": "::ffff:192.168.65.1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "userId": 1,
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2026-08-15 03:28:05 [ERROR]: Database Error: Database operation failed
+Error
+    at Query.run (/app/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /app/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.rawSelect (/app/node_modules/sequelize/src/dialects/abstract/query-interface.js:1043:18)
+    at async Function.aggregate (/app/node_modules/sequelize/src/model.js:2067:19)
+    at async Function.sum (/app/node_modules/sequelize/src/model.js:2236:12)
+    at async Promise.all (index 0)
+    at async /app/src/controllers/dashboard.controller.ts:36:59
+{
+  "service": "database",
+  "error": "Unknown column 'MemberSubscription.createdAt' in 'where clause'",
+  "url": "/api/dashboard",
+  "method": "GET",
+  "ip": "::ffff:192.168.65.1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "userId": 1,
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2026-08-15 03:28:05 [ERROR]: Database Error: Database operation failed
+Error
+    at Query.run (/app/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /app/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.rawSelect (/app/node_modules/sequelize/src/dialects/abstract/query-interface.js:1043:18)
+    at async Function.aggregate (/app/node_modules/sequelize/src/model.js:2067:19)
+    at async Function.sum (/app/node_modules/sequelize/src/model.js:2236:12)
+    at async Promise.all (index 0)
+    at async /app/src/controllers/dashboard.controller.ts:36:59
+{
+  "service": "database",
+  "error": "Unknown column 'MemberSubscription.createdAt' in 'where clause'",
+  "url": "/api/dashboard",
+  "method": "GET",
+  "ip": "::ffff:192.168.65.1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "userId": 1,
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2026-08-15 03:31:09 [ERROR]: Database Error: Database operation failed
+Error
+    at Query.run (/app/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /app/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/app/node_modules/sequelize/src/dialects/abstract/query-interface.js:1001:12)
+    at async Function.findAll (/app/node_modules/sequelize/src/model.js:1824:21)
+    at async Promise.all (index 1)
+    at async Function.findAndCountAll (/app/node_modules/sequelize/src/model.js:2183:27)
+    at async /app/src/routes/user.routes.ts:60:34
+{
+  "service": "database",
+  "error": "Unknown column 'User.createdAt' in 'order clause'",
+  "url": "/api/users?page=1&limit=10&search=&status=&role=",
+  "method": "GET",
+  "ip": "::ffff:192.168.65.1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "userId": 1,
+  "body": {},
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "10",
+    "search": "",
+    "status": "",
+    "role": ""
+  }
+}
+2026-08-15 03:31:09 [ERROR]: Database Error: Database operation failed
+Error
+    at Query.run (/app/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /app/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/app/node_modules/sequelize/src/dialects/abstract/query-interface.js:1001:12)
+    at async Function.findAll (/app/node_modules/sequelize/src/model.js:1824:21)
+    at async Promise.all (index 1)
+    at async Function.findAndCountAll (/app/node_modules/sequelize/src/model.js:2183:27)
+    at async /app/src/routes/user.routes.ts:60:34
+{
+  "service": "database",
+  "error": "Unknown column 'User.createdAt' in 'order clause'",
+  "url": "/api/users?page=1&limit=10&search=&status=&role=",
+  "method": "GET",
+  "ip": "::ffff:192.168.65.1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "userId": 1,
+  "body": {},
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "10",
+    "search": "",
+    "status": "",
+    "role": ""
+  }
+}
+2026-08-15 03:31:14 [ERROR]: Database Error: Database operation failed
+Error
+    at Query.run (/app/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /app/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/app/node_modules/sequelize/src/dialects/abstract/query-interface.js:1001:12)
+    at async Function.findAll (/app/node_modules/sequelize/src/model.js:1824:21)
+    at async Promise.all (index 1)
+    at async Function.findAndCountAll (/app/node_modules/sequelize/src/model.js:2183:27)
+    at async /app/src/routes/user.routes.ts:60:34
+{
+  "service": "database",
+  "error": "Unknown column 'User.createdAt' in 'order clause'",
+  "url": "/api/users?page=1&limit=10&search=&status=&role=",
+  "method": "GET",
+  "ip": "::ffff:192.168.65.1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "userId": 1,
+  "body": {},
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "10",
+    "search": "",
+    "status": "",
+    "role": ""
+  }
+}
+2026-08-15 03:31:14 [ERROR]: Database Error: Database operation failed
+Error
+    at Query.run (/app/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /app/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/app/node_modules/sequelize/src/dialects/abstract/query-interface.js:1001:12)
+    at async Function.findAll (/app/node_modules/sequelize/src/model.js:1824:21)
+    at async Promise.all (index 1)
+    at async Function.findAndCountAll (/app/node_modules/sequelize/src/model.js:2183:27)
+    at async /app/src/routes/user.routes.ts:60:34
+{
+  "service": "database",
+  "error": "Unknown column 'User.createdAt' in 'order clause'",
+  "url": "/api/users?page=1&limit=10&search=&status=&role=",
+  "method": "GET",
+  "ip": "::ffff:192.168.65.1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "userId": 1,
+  "body": {},
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "10",
+    "search": "",
+    "status": "",
+    "role": ""
+  }
+}
+2026-08-15 03:36:46 [ERROR]: Database Error: Database operation failed
+Error
+    at Query.run (/app/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /app/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.rawSelect (/app/node_modules/sequelize/src/dialects/abstract/query-interface.js:1043:18)
+    at async Function.aggregate (/app/node_modules/sequelize/src/model.js:2067:19)
+    at async Function.sum (/app/node_modules/sequelize/src/model.js:2236:12)
+    at async Promise.all (index 0)
+    at async /app/src/controllers/dashboard.controller.ts:36:59
+{
+  "service": "database",
+  "error": "Unknown column 'MemberSubscription.createdAt' in 'where clause'",
+  "url": "/api/dashboard",
+  "method": "GET",
+  "ip": "::ffff:192.168.65.1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "userId": 1,
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2026-08-15 03:36:46 [ERROR]: Database Error: Database operation failed
+Error
+    at Query.run (/app/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /app/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.rawSelect (/app/node_modules/sequelize/src/dialects/abstract/query-interface.js:1043:18)
+    at async Function.aggregate (/app/node_modules/sequelize/src/model.js:2067:19)
+    at async Function.sum (/app/node_modules/sequelize/src/model.js:2236:12)
+    at async Promise.all (index 0)
+    at async /app/src/controllers/dashboard.controller.ts:36:59
+{
+  "service": "database",
+  "error": "Unknown column 'MemberSubscription.createdAt' in 'where clause'",
+  "url": "/api/dashboard",
+  "method": "GET",
+  "ip": "::ffff:192.168.65.1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "userId": 1,
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2026-08-15 03:47:39 [ERROR]: Database Error: Database operation failed
+Error
+    at Query.run (/app/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /app/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/app/node_modules/sequelize/src/dialects/abstract/query-interface.js:1001:12)
+    at async Function.findAll (/app/node_modules/sequelize/src/model.js:1824:21)
+    at async Promise.all (index 1)
+    at async Function.findAndCountAll (/app/node_modules/sequelize/src/model.js:2183:27)
+    at async /app/src/routes/user.routes.ts:60:34
+{
+  "service": "database",
+  "error": "Unknown column 'User.createdAt' in 'order clause'",
+  "url": "/api/users?page=1&limit=10&search=&status=&role=",
+  "method": "GET",
+  "ip": "::ffff:192.168.65.1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "userId": 1,
+  "body": {},
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "10",
+    "search": "",
+    "status": "",
+    "role": ""
+  }
+}
+2026-08-15 03:47:39 [ERROR]: Database Error: Database operation failed
+Error
+    at Query.run (/app/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /app/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/app/node_modules/sequelize/src/dialects/abstract/query-interface.js:1001:12)
+    at async Function.findAll (/app/node_modules/sequelize/src/model.js:1824:21)
+    at async Promise.all (index 1)
+    at async Function.findAndCountAll (/app/node_modules/sequelize/src/model.js:2183:27)
+    at async /app/src/routes/user.routes.ts:60:34
+{
+  "service": "database",
+  "error": "Unknown column 'User.createdAt' in 'order clause'",
+  "url": "/api/users?page=1&limit=10&search=&status=&role=",
+  "method": "GET",
+  "ip": "::ffff:192.168.65.1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "userId": 1,
+  "body": {},
+  "params": {},
+  "query": {
+    "page": "1",
+    "limit": "10",
+    "search": "",
+    "status": "",
+    "role": ""
+  }
+}
+2026-08-15 05:55:18 [ERROR]: Unable to connect to the database: connect ECONNREFUSED 172.19.0.4:3306
+SequelizeConnectionRefusedError: connect ECONNREFUSED 172.19.0.4:3306
+    at ConnectionManager.connect (/app/node_modules/sequelize/src/dialects/mysql/connection-manager.js:116:17)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ConnectionManager._connect (/app/node_modules/sequelize/src/dialects/abstract/connection-manager.js:332:24)
+    at async /app/node_modules/sequelize/src/dialects/abstract/connection-manager.js:250:32
+    at async ConnectionManager.getConnection (/app/node_modules/sequelize/src/dialects/abstract/connection-manager.js:280:7)
+    at async /app/node_modules/sequelize/src/sequelize.js:638:26
+    at async Sequelize.authenticate (/app/node_modules/sequelize/src/sequelize.js:972:5)
+    at async connectDatabase (/app/src/config/database.config.ts:93:5)
+    at async startServer (/app/src/index.ts:153:5)
+{
+  "name": "SequelizeConnectionRefusedError",
+  "parent": {
+    "errno": -111,
+    "code": "ECONNREFUSED",
+    "syscall": "connect",
+    "address": "172.19.0.4",
+    "port": 3306,
+    "fatal": true
+  },
+  "original": {
+    "errno": -111,
+    "code": "ECONNREFUSED",
+    "syscall": "connect",
+    "address": "172.19.0.4",
+    "port": 3306,
+    "fatal": true
+  }
+}
+2026-08-15 05:55:53 [ERROR]: Unexpected Error
+Error: Not allowed by CORS
+    at origin (/app/src/index.ts:56:16)
+    at /app/node_modules/cors/lib/index.js:219:13
+    at optionsCallback (/app/node_modules/cors/lib/index.js:199:9)
+    at corsMiddleware (/app/node_modules/cors/lib/index.js:204:7)
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/app/node_modules/express/lib/router/index.js:328:13)
+    at /app/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/app/node_modules/express/lib/router/index.js:346:12)
+    at next (/app/node_modules/express/lib/router/index.js:280:10)
+    at internalNext (/app/node_modules/helmet/index.cjs:537:6)
+{
+  "service": "app",
+  "error": "Not allowed by CORS",
+  "url": "/api/auth/login",
+  "method": "OPTIONS",
+  "ip": "::ffff:172.19.0.1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Safari/605.1.15",
+  "params": {},
+  "query": {}
+}
+2026-08-15 05:55:54 [ERROR]: Unexpected Error
+Error: Not allowed by CORS
+    at origin (/app/src/index.ts:56:16)
+    at /app/node_modules/cors/lib/index.js:219:13
+    at optionsCallback (/app/node_modules/cors/lib/index.js:199:9)
+    at corsMiddleware (/app/node_modules/cors/lib/index.js:204:7)
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/app/node_modules/express/lib/router/index.js:328:13)
+    at /app/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/app/node_modules/express/lib/router/index.js:346:12)
+    at next (/app/node_modules/express/lib/router/index.js:280:10)
+    at internalNext (/app/node_modules/helmet/index.cjs:537:6)
+{
+  "service": "app",
+  "error": "Not allowed by CORS",
+  "url": "/api/auth/login",
+  "method": "OPTIONS",
+  "ip": "::ffff:172.19.0.1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Safari/605.1.15",
+  "params": {},
+  "query": {}
+}
+2026-08-15 05:57:01 [ERROR]: Database Error: Database operation failed
+Error
+    at Query.run (/app/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /app/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.select (/app/node_modules/sequelize/src/dialects/abstract/query-interface.js:1001:12)
+    at async Function.findAll (/app/node_modules/sequelize/src/model.js:1824:21)
+    at async Function.findOne (/app/node_modules/sequelize/src/model.js:1998:12)
+    at async /app/src/controllers/auth.controller.ts:102:16
+{
+  "service": "database",
+  "error": "Table 'gym_management_system.users' doesn't exist",
+  "url": "/api/auth/login",
+  "method": "POST",
+  "ip": "::ffff:172.19.0.1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Safari/605.1.15",
+  "body": {
+    "email": "admin@gym.com",
+    "password": "password"
+  },
+  "params": {},
+  "query": {}
+}
+2026-08-15 05:57:33 [ERROR]: Database Error: Database operation failed
+Error
+    at Query.run (/app/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /app/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.rawSelect (/app/node_modules/sequelize/src/dialects/abstract/query-interface.js:1043:18)
+    at async Function.aggregate (/app/node_modules/sequelize/src/model.js:2067:19)
+    at async Function.sum (/app/node_modules/sequelize/src/model.js:2236:12)
+    at async Promise.all (index 0)
+    at async /app/src/controllers/dashboard.controller.ts:36:59
+{
+  "service": "database",
+  "error": "Unknown column 'MemberSubscription.createdAt' in 'where clause'",
+  "url": "/api/dashboard",
+  "method": "GET",
+  "ip": "::ffff:172.19.0.1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Safari/605.1.15",
+  "userId": 1,
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2026-08-15 05:57:49 [ERROR]: Database Error: Database operation failed
+Error
+    at Query.run (/app/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /app/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.rawSelect (/app/node_modules/sequelize/src/dialects/abstract/query-interface.js:1043:18)
+    at async Function.aggregate (/app/node_modules/sequelize/src/model.js:2067:19)
+    at async Function.sum (/app/node_modules/sequelize/src/model.js:2236:12)
+    at async Promise.all (index 0)
+    at async /app/src/controllers/dashboard.controller.ts:36:59
+{
+  "service": "database",
+  "error": "Unknown column 'MemberSubscription.createdAt' in 'where clause'",
+  "url": "/api/dashboard",
+  "method": "GET",
+  "ip": "::ffff:172.19.0.1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Safari/605.1.15",
+  "userId": 1,
+  "body": {},
+  "params": {},
+  "query": {}
+}
+2026-08-15 05:57:49 [ERROR]: Database Error: Database operation failed
+Error
+    at Query.run (/app/node_modules/sequelize/src/dialects/mysql/query.js:46:25)
+    at /app/node_modules/sequelize/src/sequelize.js:650:28
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async MySQLQueryInterface.rawSelect (/app/node_modules/sequelize/src/dialects/abstract/query-interface.js:1043:18)
+    at async Function.aggregate (/app/node_modules/sequelize/src/model.js:2067:19)
+    at async Function.sum (/app/node_modules/sequelize/src/model.js:2236:12)
+    at async Promise.all (index 0)
+    at async /app/src/controllers/dashboard.controller.ts:36:59
+{
+  "service": "database",
+  "error": "Unknown column 'MemberSubscription.createdAt' in 'where clause'",
+  "url": "/api/dashboard",
+  "method": "GET",
+  "ip": "::ffff:172.19.0.1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Safari/605.1.15",
+  "userId": 1,
+  "body": {},
+  "params": {},
+  "query": {}
+}

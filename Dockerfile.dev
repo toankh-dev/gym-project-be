@@ -1,0 +1,40 @@
+# Development Dockerfile for Node.js backend with hot reload
+FROM node:18-alpine AS development
+
+# Install dependencies for development
+RUN apk add --no-cache \
+    curl \
+    git \
+    bash \
+    python3 \
+    make \
+    g++
+
+# Set working directory
+WORKDIR /app
+
+# Copy package files
+COPY package.json package-lock.json ./
+
+# Install all dependencies (including dev dependencies)
+RUN npm ci
+
+# Copy source code
+COPY . .
+
+# Create necessary directories
+RUN mkdir -p uploads logs && \
+    chmod 755 uploads logs
+
+# Set environment for development
+ENV NODE_ENV=development
+
+# Expose ports
+EXPOSE 5000 9229
+
+# Health check for development
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
+  CMD curl -f http://localhost:5000/api/health || exit 1
+
+# Start development server with nodemon and debugging
+CMD ["npm", "run", "dev:debug"]

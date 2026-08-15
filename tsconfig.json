@@ -1,0 +1,64 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "useDefineForClassFields": false,
+    "module": "commonjs",
+    "lib": ["ES2022"],
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": false,
+    "noEmitOnError": false,
+    "strictNullChecks": false,
+    "strictFunctionTypes": false,
+    "strictPropertyInitialization": false,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "noEmit": false,
+    "checkJs": false,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "allowJs": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*"],
+      "@/controllers/*": ["controllers/*"],
+      "@/middlewares/*": ["middlewares/*"],
+      "@/models/*": ["models/*"],
+      "@/routes/*": ["routes/*"],
+      "@/services/*": ["services/*"],
+      "@/utils/*": ["utils/*"],
+      "@/config/*": ["config/*"],
+      "@/validators/*": ["validators/*"],
+      "@/types/*": ["types/*"]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "tests"
+  ],
+  "ts-node": {
+    "esm": false,
+    "transpileOnly": true,
+    "require": ["tsconfig-paths/register"],
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  }
+}
