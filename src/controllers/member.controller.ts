@@ -89,6 +89,16 @@ export const getMembers = asyncHandler(async (req: Request, res: Response): Prom
           }
         ],
         required: false
+      },
+      {
+        association: 'currentSubscription',
+        include: [
+          {
+            association: 'package',
+            attributes: ['id', 'name', 'durationMonths', 'price']
+          }
+        ],
+        required: false
       }
     ],
     order: [[sortBy as string, sortOrder as string]],
