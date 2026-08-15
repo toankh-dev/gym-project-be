@@ -1,4 +1,4 @@
-import { DataTypes, Model, Optional, } from 'sequelize';
+import { DataTypes, Model, Optional, Op } from 'sequelize';
 import sequelize from '@/config/database.config';
 import { User } from './User.model';
 import { Trainer } from './Trainer.model';
