@@ -421,25 +421,53 @@ export const updateMember = asyncHandler(async (req: Request, res: Response): Pr
       });
     }
 
-    // Handle package update: create a new PENDING subscription if packageId is provided and different
-    if (packageId) {
-      const currentPkgId = member.currentSubscription?.package?.id;
-      if (Number(packageId) !== currentPkgId) {
+    // Handle package update: replace PENDING subscription, but block if already ACTIVE
+    if (packageId !== undefined) {
+      // Check if there is an ACTIVE subscription
+      const activeSub = await MemberSubscription.findOne({
+        where: {
+          memberId: member.id,
+          status: 'ACTIVE',
+          endDate: { [Op.gte]: new Date() }
+        }
+      });
+
+      // Find existing PENDING subscription
+      const pendingSub = await MemberSubscription.findOne({
+        where: { memberId: member.id, status: 'PENDING' }
+      });
+
+      if (!packageId || packageId === '') {
+        // If user unselects the package, delete the pending subscription if it exists
+        if (pendingSub) {
+          await pendingSub.destroy({ force: true });
+        }
+      } else {
+        if (activeSub && Number(packageId) !== activeSub.packageId) {
+          throw createError.validation('Hội viên đã có gói tập đang hoạt động. Vui lòng sử dụng tính năng gia hạn hoặc đăng ký mới thay vì thay đổi gói tập ở màn hình cập nhật.');
+        }
+
         const pkg = await MembershipPackage.findByPk(packageId);
         if (pkg && pkg.status === 'ACTIVE') {
-          const startDate = new Date();
-          const endDate = new Date(startDate);
-          endDate.setMonth(endDate.getMonth() + pkg.durationMonths);
+          if (!pendingSub || pendingSub.packageId !== Number(packageId)) {
+            const startDate = new Date();
+            const endDate = new Date(startDate);
+            endDate.setMonth(endDate.getMonth() + pkg.durationMonths);
 
-          await MemberSubscription.create({
-            memberId: member.id,
-            packageId: pkg.id,
-            startDate,
-            endDate,
-            actualPrice: pkg.price,
-            status: 'PENDING',
-            registeredBy: (req as any).user?.id
-          });
+            if (pendingSub) {
+              await pendingSub.destroy({ force: true });
+            }
+
+            await MemberSubscription.create({
+              memberId: member.id,
+              packageId: pkg.id,
+              startDate,
+              endDate,
+              actualPrice: pkg.price,
+              status: 'PENDING',
+              registeredBy: (req as any).user?.id
+            });
+          }
         }
       }
     }
