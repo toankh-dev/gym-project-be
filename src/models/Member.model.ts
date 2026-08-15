@@ -213,6 +213,24 @@ export class Member extends Model<MemberAttributes, MemberCreationAttributes> im
         },
         {
           association: 'profile'
+        },
+        {
+          association: 'currentSubscription',
+          include: [
+            {
+              association: 'package',
+              attributes: ['id', 'name', 'durationMonths', 'price']
+            }
+          ]
+        },
+        {
+          association: 'subscriptions',
+          include: [
+            {
+              association: 'package',
+              attributes: ['id', 'name', 'durationMonths', 'price']
+            }
+          ]
         }
       ]
     });
