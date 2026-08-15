@@ -61,7 +61,7 @@ const getUsers = asyncHandler(async (req: any, res: any): Promise<void> => {
     where: whereClause,
     include: includeClause,
     attributes: { exclude: ['passwordHash'] },
-    order: [[sortBy, sortOrder]],
+    order: [[User, sortBy, sortOrder]],
     limit: parseInt(limit),
     offset,
     distinct: true
