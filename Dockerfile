@@ -32,12 +32,18 @@ WORKDIR /app
 # Copy package files
 COPY package.json package-lock.json ./
 
-# Install only production dependencies
+# Install only production dependencies and sequelize-cli for migrations
 RUN npm ci --only=production --ignore-scripts && \
+    npm install -g sequelize-cli && \
     npm cache clean --force
 
 # Copy built application from builder stage
 COPY --from=builder /app/dist ./dist
+
+# Copy configuration and sequelize files for migrations
+COPY config ./config
+COPY .sequelizerc .
+COPY src/database ./src/database
 
 # Create uploads directory
 RUN mkdir -p uploads logs && \
