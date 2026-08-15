@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { body } from 'express-validator';
-import rateLimit from 'express-rate-limit';
+
 import {
   register,
   login,
@@ -17,26 +17,7 @@ import { validateRequest } from '@/middlewares/validation.middleware';
 
 const router = Router();
 
-// Rate limiting for auth routes
-const authLimiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 10, // Limit each IP to 10 requests per windowMs
-  message: {
-    error: 'Too many authentication attempts, please try again later'
-  },
-  standardHeaders: true,
-  legacyHeaders: false,
-});
 
-const loginLimiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 5, // Limit each IP to 5 login attempts per windowMs
-  message: {
-    error: 'Too many login attempts, please try again later'
-  },
-  standardHeaders: true,
-  legacyHeaders: false,
-});
 
 // Validation rules
 const registerValidation = [
@@ -184,10 +165,10 @@ const updateProfileValidation = [
 ];
 
 // Public routes (no authentication required)
-router.post('/register', authLimiter, registerValidation, validateRequest, register);
-router.post('/login', loginLimiter, loginValidation, validateRequest, login);
-router.post('/forgot-password', authLimiter, forgotPasswordValidation, validateRequest, forgotPassword);
-router.post('/reset-password', authLimiter, resetPasswordValidation, validateRequest, resetPassword);
+router.post('/register', registerValidation, validateRequest, register);
+router.post('/login', loginValidation, validateRequest, login);
+router.post('/forgot-password', forgotPasswordValidation, validateRequest, forgotPassword);
+router.post('/reset-password', resetPasswordValidation, validateRequest, resetPassword);
 
 // Public route for token refresh (no rate limiting - handled by token expiry)
 router.post('/refresh', refreshToken);
