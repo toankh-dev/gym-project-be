@@ -341,6 +341,7 @@ export const updateMember = asyncHandler(async (req: Request, res: Response): Pr
     // Member data
     membershipStatus,
     assignedTrainerId,
+    packageId,
     note,
     // Member profile data
     heightCm,
@@ -418,6 +419,29 @@ export const updateMember = asyncHandler(async (req: Request, res: Response): Pr
       await MemberProfile.update(memberProfileUpdateData, {
         where: { memberId: member.id }
       });
+    }
+
+    // Handle package update: create a new PENDING subscription if packageId is provided and different
+    if (packageId) {
+      const currentPkgId = member.currentSubscription?.package?.id;
+      if (Number(packageId) !== currentPkgId) {
+        const pkg = await MembershipPackage.findByPk(packageId);
+        if (pkg && pkg.status === 'ACTIVE') {
+          const startDate = new Date();
+          const endDate = new Date(startDate);
+          endDate.setMonth(endDate.getMonth() + pkg.durationMonths);
+
+          await MemberSubscription.create({
+            memberId: member.id,
+            packageId: pkg.id,
+            startDate,
+            endDate,
+            actualPrice: pkg.price,
+            status: 'PENDING',
+            registeredBy: (req as any).user?.id
+          });
+        }
+      }
     }
 
     // Get updated member
